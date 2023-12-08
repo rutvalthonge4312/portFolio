@@ -14,7 +14,23 @@ body {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.card {
+  opacity: 0;
+  visibility: hidden;
+  transition: 1.5s all ease;
+}
+@keyframes cardAnimation {
+  0% {
+    transform: scale(-1);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+.card.active {
+  visibility: visible;
+  opacity: 1;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -171,6 +187,8 @@ body {
 .socialLinks img:hover {
   background-color: #754ef9;
   filter: invert(0deg);
+  transform: translateY(-5px);
+  transition: all ease-in-out 0.5s;
 }
 .skills {
   height: 70vh;
@@ -189,6 +207,7 @@ body {
 .head strong {
   color: #754ef9;
 }
+
 .aboutMe {
   height: 80vh;
 }

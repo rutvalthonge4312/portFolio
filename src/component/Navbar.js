@@ -1,6 +1,18 @@
 import React from "react";
 
 export default function Navbar() {
+  const handleClick = (param) => {
+    let divEle = document.getElementsByClassName(param);
+
+    if (divEle.length > 0) {
+      divEle[0].scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+    }
+  };
+
   return (
     <nav className="navbar navbar-expand-lg s">
       <div className="container-fluid">
@@ -12,17 +24,17 @@ export default function Navbar() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" onClick={() => handleClick("aboutMe")}>
                 Education
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" onClick={() => handleClick("skills")}>
                 Skills
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" onClick={() => handleClick("projects")}>
                 Projects
               </a>
             </li>
