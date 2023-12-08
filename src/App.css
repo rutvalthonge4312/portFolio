@@ -1,0 +1,302 @@
+.App {
+  text-align: center;
+}
+body {
+  scroll-behavior: smooth;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body {
+  font-family: "Poppins", sans-serif;
+
+  background-color: #1f242d;
+}
+.navbar {
+  text-align: center;
+  color: white;
+}
+.navbar-collapse {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.btn a {
+  color: white;
+  text-decoration: none;
+}
+.navbar a {
+  color: white;
+  font-size: 1.2rem;
+}
+.headerSec {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1f242d;
+  color: white;
+}
+.headerSec > * {
+  width: 50%;
+}
+
+.infoParaInHeader {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.infoParaInHeader h6 {
+  font-size: 2rem;
+}
+.socialLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  filter: invert(180);
+  padding: 1rem;
+}
+.headerSec {
+  text-align: center;
+}
+.headerSec strong {
+  font-size: 4rem;
+  color: #754ef9;
+}
+.socialLinks img {
+  max-height: 3rem;
+  max-width: 3rem;
+  aspect-ratio: 1/1;
+  object-fit: fill;
+  margin: 0rem 0.5rem;
+}
+.imageSecInHeader img {
+  max-height: 20rem;
+  max-width: 20rem;
+  object-fit: fill;
+  aspect-ratio: 3/4;
+  border-radius: 15px;
+}
+.imageSecInHeader {
+  border-radius: 50%;
+  width: 40%;
+  padding: 1rem;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+}
+.card {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #1f242d;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  max-height: 13rem;
+  max-width: 28rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(242, 242, 242, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(81, 132, 200, 0.2) 0px 8px 24px;
+}
+.card h5 {
+  color: #754ef9;
+  font-size: 2rem;
+}
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+.textPara {
+  text-align: center;
+  padding-left: 1rem;
+}
+.aboutMe strong {
+  color: #754ef9;
+}
+.aboutMe {
+  background-color: #323946;
+}
+.aboutMe h3 {
+  font-size: 2rem;
+}
+.socialLinks img {
+  border: 3px solid #754ef9;
+  border-radius: 50%;
+  filter: invert(0deg);
+}
+.socialLinks img:hover {
+  background-color: #754ef9;
+  filter: invert(0deg);
+}
+.skills {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.head {
+  text-align: center;
+}
+.head h4 {
+  color: white;
+  font-size: 2rem;
+}
+.head strong {
+  color: #754ef9;
+}
+.aboutMe {
+  height: 80vh;
+}
+.skills {
+  height: 80vh;
+}
+.skills .card img {
+  filter: invert(180);
+  height: 4rem;
+  width: 4rem;
+}
+.skills .card h3 {
+  color: #754ef9;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+
+  background-color: #323946;
+}
+.projects strong {
+  color: #754ef9;
+  font-size: 3rem;
+}
+.projects h4 {
+  font-size: 3rem;
+  color: white;
+}
+.carousel {
+  border: none;
+  width: 80%;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.carousel-inner img {
+  filter: blur(5px);
+}
+.carousel-inner h5 {
+  font-size: 2rem;
+}
+.carousel-inner .btn {
+  border: 1px solid #754ef9;
+  color: white;
+}
+.carousel-inner .btn:hover {
+  background-color: #754ef9;
+  color: white;
+}
+.carousel-inner img {
+  aspect-ratio: 16/9;
+  max-height: 25rem;
+  width: 10rem;
+}
+@media screen and (max-width: 1100px) {
+  .card h5 {
+    font-size: 1.5rem;
+  }
+  .card p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .skills {
+    height: 100vh;
+  }
+  .aboutMe {
+    height: 100vh;
+  }
+  .card h5 {
+    font-size: 1.8rem;
+  }
+  .card p {
+    font-size: 1rem;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .headerSec {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar {
+    height: 2rem;
+    color: white;
+  }
+  .headerSec strong {
+    font-size: 3rem;
+    color: #754ef9;
+  }
+  .headerSec > * {
+    width: 100%;
+  }
+  .headerSec p {
+    font-size: 0.7rem;
+  }
+  .headerSec h3 {
+    font-size: 1rem;
+  }
+  .imageSecInHeader {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+}
